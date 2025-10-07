@@ -1,0 +1,1938 @@
+{
+    "facultyMember": [
+        {
+            "facultyId": "FM00032118",
+            "facultyPK": "FM00032118",
+            "employeeId": "u0984155",
+            "nationalProviderID": "1447214655",
+            "track": "(Clinical)",
+            "preferredFullName": "Jennie T. Clarke",
+            "lastName": "Clarke",
+            "firstName": "Jennie",
+            "middleName": "Thorn",
+            "degrees": "M.D.",
+            "gender": "F",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00032118&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00032118",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<rte_p rte_style=\"text-align: left;\">Jennie T. Clarke, MD has specialized expertise in caring for patients with rheumatologic skin disease, such as lupus erythematosus and dermatomyositis, and other complex inflammatory dermatologic diseases in both children and adults.  She also has a specialized interest in treating the skin conditions that occur commonly in patients with inflammatory bowel disease.  In addition, she enjoys caring for general dermatology patients in her clinics.  Dr. Clarke is also committed to the education of dermatology residents, and she is the supervising dermatologist of the resident dermatology continuity clinic at the University Hospital. </rte_p>",
+            "clinicalBio": "Jennie T. Clarke, MD has specialized expertise in caring for patients with rheumatologic skin disease, such as lupus erythematosus and dermatomyositis, and other complex inflammatory dermatologic diseases in both children and adults.  She also has a specialized interest in treating the skin conditions that occur commonly in patients with inflammatory bowel disease.  In addition, she enjoys caring for general dermatology patients in her clinics.  Dr. Clarke is also committed to the education of dermatology residents, and she is the supervising dermatologist of the resident dermatology continuity clinic at the University Hospital. ",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001035",
+                    "facultyRankingTitle": "Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "6723",
+                        "locationClinicPK": "CLOC001663",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG000597",
+                        "locationTitle": "Redstone Health Center",
+                        "locationBuildingId": "5385",
+                        "locationClinicID": "6608",
+                        "locationClinicPK": "CLOC000255",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": "Suite 115",
+                        "locationStreet": "1743 W Redstone Center Drive",
+                        "locationCity": "Park City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84098",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Redstone Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/redstone"
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "1",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": {
+                    "languageId": "LNG0000002",
+                    "languageTitle": "English",
+                    "fadOrder": "1"
+                }
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "694",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 5.0",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {},
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00010103",
+            "facultyPK": "FM00010103",
+            "employeeId": "u0046495",
+            "nationalProviderID": "1114077849",
+            "track": "(Clinical)",
+            "preferredFullName": "Christopher B. Hansen",
+            "lastName": "Hansen",
+            "firstName": "Christopher",
+            "middleName": "Barton",
+            "degrees": "M.D.",
+            "gender": "M",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00010103&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00010103",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<rte_p rte_style=\"text-align: left;\">Christopher B. Hansen, MD has specialized expertise in the evaluation and treatment of rheumatic skin diseases such as lupus erythematosus, dermatomyositis, and scleroderma. He is board certified in Dermatology. Dr. Hansen’s main clinical focus is the medical management of connective tissue diseases that involve the skin as well as common skin disorders such as acne, rashes, and skin cancer. Dr. Hansen runs the UVA-1 phototherapy program in the Department of Dermatology. UVA-1 phototherapy is primarily used to treat patients with sclerosing skin disorders like morphea.</rte_p>",
+            "clinicalBio": "Christopher B. Hansen, MD has specialized expertise in the evaluation and treatment of rheumatic skin diseases such as lupus erythematosus, dermatomyositis, and scleroderma. He is board certified in Dermatology. Dr. Hansen’s main clinical focus is the medical management of connective tissue diseases that involve the skin as well as common skin disorders such as acne, rashes, and skin cancer. Dr. Hansen runs the UVA-1 phototherapy program in the Department of Dermatology. UVA-1 phototherapy is primarily used to treat patients with sclerosing skin disorders like morphea.",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001033",
+                    "facultyRankingTitle": "Associate Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "6723",
+                        "locationClinicPK": "CLOC001663",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": [
+                    {
+                        "languageId": "LNG0000002",
+                        "languageTitle": "English",
+                        "fadOrder": "1"
+                    },
+                    {
+                        "languageId": "LNG0000010",
+                        "languageTitle": "French",
+                        "fadOrder": "2"
+                    }
+                ]
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "655",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 5.0",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {
+                "researchInterest": [
+                    {
+                        "researchInterestId": "SBS0026784",
+                        "researchInterestDescription": "Cutaneous Lupus\r\n",
+                        "globalimpactList": {},
+                        "displayorder": "1"
+                    },
+                    {
+                        "researchInterestId": "SBS0004051",
+                        "researchInterestDescription": "Dermatomyositis",
+                        "globalimpactList": {},
+                        "displayorder": "2"
+                    },
+                    {
+                        "researchInterestId": "SPEC025365",
+                        "researchInterestDescription": "Morphea",
+                        "globalimpactList": {},
+                        "displayorder": "3"
+                    },
+                    {
+                        "researchInterestId": "SPEC025366",
+                        "researchInterestDescription": "UVA-1 Phototherapy",
+                        "globalimpactList": {},
+                        "displayorder": "4"
+                    }
+                ]
+            },
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00081280",
+            "facultyPK": "FM00081280",
+            "employeeId": "u0506040",
+            "nationalProviderID": "1114422854",
+            "track": "(Clinical)",
+            "preferredFullName": "Zachary H. Hopkins",
+            "lastName": "Hopkins",
+            "firstName": "Zachary",
+            "middleName": "H.",
+            "degrees": "M.D.",
+            "gender": {},
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00081280&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00081280",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Calibri,sans-serif\">Dr. Zachary Hopkins is a is a board-certified dermatologist and member of the American Academy of Dermatology, Society for Investigative Dermatology, and American DermatoEpidemiology Network. He is also pursuing advanced training in autoimmune dermatology with the University of Utah Autoimmune Dermatology group. &nbsp;</span></span></p>\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Calibri,sans-serif\">Dr. Hopkins completed his medical school training at the University of Utah School of Medicine followed by a dermatology residency at Broward Health in Fort Lauderdale, Florida. There he developed a passion for complex medical dermatology and autoimmune dermatologic disease. He also worked with a diverse population of patients and learned to appreciate the unique perspectives each patient brings to the visit. His clinical interests include: general dermatology, complex medical dermatology, blistering diseases, dermatomyositis, cutaneous lupus, vasculitis, and complex ulcers. </span></span></p>\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Calibri,sans-serif\">Dr. Hopkins is an active clinical researcher studying management of autoimmune disease, including blistering and connective tissue diseases. He is also interested in epidemiology, research design, and promoting high-quality research methodology. Lastly, he is working to validate, develop and implement patient-reported outcome measures to clinical visits. He has authored multiple high-impact journal articles and has spoken at National and International dermatology conferences. </span></span></p>\n\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Calibri,sans-serif\">Dr. Hopkins is originally from Highland, Utah and currently lives in Salt Lake City with his wife and two sons. Together they enjoy spending times in the outdoors, including hiking, skiing, and mountain biking. </span></span></p>",
+            "clinicalBio": "Dr. Zachary Hopkins is a is a board-certified dermatologist and member of the American Academy of Dermatology, Society for Investigative Dermatology, and American DermatoEpidemiology Network. He is also pursuing advanced training in autoimmune dermatology with the University of Utah Autoimmune Dermatology group. &nbsp;\n\nDr. Hopkins completed his medical school training at the University of Utah School of Medicine followed by a dermatology residency at Broward Health in Fort Lauderdale, Florida. There he developed a passion for complex medical dermatology and autoimmune dermatologic disease. He also worked with a diverse population of patients and learned to appreciate the unique perspectives each patient brings to the visit. His clinical interests include: general dermatology, complex medical dermatology, blistering diseases, dermatomyositis, cutaneous lupus, vasculitis, and complex ulcers. \n\nDr. Hopkins is an active clinical researcher studying management of autoimmune disease, including blistering and connective tissue diseases. He is also interested in epidemiology, research design, and promoting high-quality research methodology. Lastly, he is working to validate, develop and implement patient-reported outcome measures to clinical visits. He has authored multiple high-impact journal articles and has spoken at National and International dermatology conferences. \n\nDr. Hopkins is originally from Highland, Utah and currently lives in Salt Lake City with his wife and two sons. Together they enjoy spending times in the outdoors, including hiking, skiing, and mountain biking. ",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001031",
+                    "facultyRankingTitle": "Assistant Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "8191",
+                        "locationClinicPK": "CLOC003563",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": "(801) 581-6484",
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "7546",
+                        "locationClinicPK": {},
+                        "locationType": "Office",
+                        "locationOfficeName": "University of Utah Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": {}
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": "(801) 581-6484",
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    },
+                    {
+                        "locationId": "BLDG000749",
+                        "locationTitle": "Veterans Administration Medical Center",
+                        "locationBuildingId": "5453",
+                        "locationClinicID": "6651",
+                        "locationClinicPK": "CLOC000041",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology Clinic",
+                        "locationRoom": {},
+                        "locationStreet": "500 S Foothill Blvd",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84148",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": {},
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Veterans Administration Medical Center",
+                        "locationUrl": {}
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024408",
+                        "ufisSpecialtyId": "126118",
+                        "specialtyTitle": "Leg Ulcers and Pyoderma Gangrenosum",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/conditions/leg-ulcers-pyoderma-gangrenosum",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Leg Ulcers and Pyoderma Gangrenosum",
+                        "lineageVer3SpecialtyID": "126118",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024408",
+                        "lineageVer2SubSpecialtyName": "Leg Ulcers and Pyoderma Gangrenosum",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027869",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": [
+                    {
+                        "languageId": "LNG0000002",
+                        "languageTitle": "English",
+                        "fadOrder": "0"
+                    },
+                    {
+                        "languageId": "LNG0001007",
+                        "languageTitle": "Portuguese",
+                        "fadOrder": "0"
+                    }
+                ]
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "74",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 5.0",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {},
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00000084",
+            "facultyPK": "FM00000084",
+            "employeeId": "u0222073",
+            "nationalProviderID": "1477659746",
+            "track": "Tenure-Line",
+            "preferredFullName": "Christopher M. Hull",
+            "lastName": "Hull",
+            "firstName": "Christopher",
+            "middleName": "M.",
+            "degrees": "M.D.",
+            "gender": "M",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00000084&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00000084",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<rte_p rte_style=\"text-align: left;\">Christopher Hull, MD has specialized expertise in the treatment of autoimmune skin diseases and viral infections of the skin. He is board certified in dermatology. His main clinical focus is general dermatology and medical dermatology including autoimmune blistering diseases.</rte_p>",
+            "clinicalBio": "Christopher Hull, MD has specialized expertise in the treatment of autoimmune skin diseases and viral infections of the skin. He is board certified in dermatology. His main clinical focus is general dermatology and medical dermatology including autoimmune blistering diseases.",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": [
+                    {
+                        "departmentId": "DPT0000070",
+                        "departmentTitle": "Dermatology",
+                        "primaryDepartment": "Y",
+                        "facultyRankingId": "RKL0000002",
+                        "facultyRankingTitle": "Professor",
+                        "facultyAppointment": "Primary",
+                        "parentRelationshipId": "REL0000016"
+                    },
+                    {
+                        "departmentId": "DPT0000072",
+                        "departmentTitle": "Internal Medicine",
+                        "primaryDepartment": "N",
+                        "facultyRankingId": "RKL0001009",
+                        "facultyRankingTitle": "Adjunct Professor",
+                        "facultyAppointment": "Adjunct",
+                        "parentRelationshipId": "REL0000016"
+                    }
+                ]
+            },
+            "divisions": {},
+            "divisionList": {
+                "division": {
+                    "divisionId": "DIV0000024",
+                    "divisionTitle": "Infectious Diseases",
+                    "departmentId": "DPT0000072"
+                }
+            },
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "8191",
+                        "locationClinicPK": "CLOC003563",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG003522",
+                        "locationTitle": "U of U Health Elko Specialty Clinic",
+                        "locationBuildingId": "5521",
+                        "locationClinicID": "8113",
+                        "locationClinicPK": "CLOC003525",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology Outreach Clinic",
+                        "locationRoom": "#102",
+                        "locationStreet": "247 Bluffs Ave",
+                        "locationCity": "Elko",
+                        "locationState": "NV",
+                        "locationPostalCode": "89801",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "U of U Health Elko Specialty Clinic",
+                        "locationUrl": "https://healthcare.utah.edu/locations/elko-specialty-clinic"
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": "(801) 585-2702",
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "1",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "2",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "3",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024407",
+                        "ufisSpecialtyId": "126117",
+                        "specialtyTitle": "Bullous (Blistering) Disease",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer3SpecialtyID": "126117",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024407",
+                        "lineageVer2SubSpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027868",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC031008",
+                        "ufisSpecialtyId": "129194",
+                        "specialtyTitle": "Transgender Health",
+                        "specialtyUrl": "https://healthcare.utah.edu/transgender-health",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": [
+                    {
+                        "languageId": "LNG0000002",
+                        "languageTitle": "English",
+                        "fadOrder": "1"
+                    },
+                    {
+                        "languageId": "LNG0000004",
+                        "languageTitle": "Spanish",
+                        "fadOrder": "2"
+                    }
+                ]
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "650",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 4.9",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {
+                "researchInterest": [
+                    {
+                        "researchInterestId": "SBS0006639",
+                        "researchInterestDescription": "Herpes Labialis",
+                        "globalimpactList": {},
+                        "displayorder": "1"
+                    },
+                    {
+                        "researchInterestId": "SBS0004043",
+                        "researchInterestDescription": "Dermatitis Herpetiformis",
+                        "globalimpactList": {},
+                        "displayorder": "2"
+                    },
+                    {
+                        "researchInterestId": "SPEC025332",
+                        "researchInterestDescription": "Chronic Urticaria",
+                        "globalimpactList": {},
+                        "displayorder": "3"
+                    }
+                ]
+            },
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00058775",
+            "facultyPK": "FM00058775",
+            "employeeId": "u0415270",
+            "nationalProviderID": "1982022497",
+            "track": "(Clinical)",
+            "preferredFullName": "Jason G. Mathis",
+            "lastName": "Mathis",
+            "firstName": "Jason",
+            "middleName": "Gordon",
+            "degrees": "M.D.",
+            "gender": "M",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00058775&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00058775",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<p>Jason Mathis, MD, brings clinical expertise in general dermatology to Davis and Weber Counties with his primary office in Farmington, Utah. He is an Assistant Professor (Clinical) in the Department of Dermatology at the University of Utah. He treats a broad range of common skin disorders, such as acne, eczema, psoriasis, warts, skin cancer, as well as uncommon conditions. He strives for optimal patient outcomes, cost-effective care, and practices with a compassionate and patient-centered approach. Ensuring patients have an excellent experience in the office is a paramount concern. He finds great joy and purpose in the practice of medicine and in serving the community. He is a member of the American Academy of Dermatology. He completed his dermatology training at the University of Rochester, New York. He feels extremely grateful for the opportunity to practice dermatology with the University of Utah. </p>",
+            "clinicalBio": "Jason Mathis, MD, brings clinical expertise in general dermatology to Davis and Weber Counties with his primary office in Farmington, Utah. He is an Assistant Professor (Clinical) in the Department of Dermatology at the University of Utah. He treats a broad range of common skin disorders, such as acne, eczema, psoriasis, warts, skin cancer, as well as uncommon conditions. He strives for optimal patient outcomes, cost-effective care, and practices with a compassionate and patient-centered approach. Ensuring patients have an excellent experience in the office is a paramount concern. He finds great joy and purpose in the practice of medicine and in serving the community. He is a member of the American Academy of Dermatology. He completed his dermatology training at the University of Rochester, New York. He feels extremely grateful for the opportunity to practice dermatology with the University of Utah. ",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001031",
+                    "facultyRankingTitle": "Assistant Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002622",
+                        "locationTitle": "Farmington Health Center",
+                        "locationBuildingId": "5312",
+                        "locationClinicID": "6739",
+                        "locationClinicPK": "CLOC001844",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": {},
+                        "locationStreet": "165 N. University Ave.",
+                        "locationCity": "Farmington",
+                        "locationState": "UT",
+                        "locationPostalCode": "84025",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Farmington Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/farmington"
+                    },
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "8191",
+                        "locationClinicPK": "CLOC003563",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG003522",
+                        "locationTitle": "U of U Health Elko Specialty Clinic",
+                        "locationBuildingId": "5521",
+                        "locationClinicID": "8113",
+                        "locationClinicPK": "CLOC003525",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology Outreach Clinic",
+                        "locationRoom": "#102",
+                        "locationStreet": "247 Bluffs Ave",
+                        "locationCity": "Elko",
+                        "locationState": "NV",
+                        "locationPostalCode": "89801",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "U of U Health Elko Specialty Clinic",
+                        "locationUrl": "https://healthcare.utah.edu/locations/elko-specialty-clinic"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "1",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC029928",
+                        "ufisSpecialtyId": "129043",
+                        "specialtyTitle": "Acne",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/acne-clinic",
+                        "specialtyOrder": "2",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Acne",
+                        "lineageVer3SpecialtyID": "129043",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC029928",
+                        "lineageVer2SubSpecialtyName": "Acne",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024407",
+                        "ufisSpecialtyId": "126117",
+                        "specialtyTitle": "Bullous (Blistering) Disease",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "3",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer3SpecialtyID": "126117",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024407",
+                        "lineageVer2SubSpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027868",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024410",
+                        "ufisSpecialtyId": "126120",
+                        "specialtyTitle": "Psoriasis and Phototherapy",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/conditions/psoriasis",
+                        "specialtyOrder": "6",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Psoriasis and Phototherapy",
+                        "lineageVer3SpecialtyID": "126120",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024410",
+                        "lineageVer2SubSpecialtyName": "Psoriasis and Phototherapy",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027871",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024406",
+                        "ufisSpecialtyId": "126116",
+                        "specialtyTitle": "Vitiligo, Pigmentary Disorders",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/conditions/vitiligo-pigment-disorders",
+                        "specialtyOrder": "7",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Vitiligo, Pigmentary Disorders",
+                        "lineageVer3SpecialtyID": "126116",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024406",
+                        "lineageVer2SubSpecialtyName": "Vitiligo, Pigmentary Disorders",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027867",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": [
+                    {
+                        "languageId": "LNG0000002",
+                        "languageTitle": "English",
+                        "fadOrder": "1"
+                    },
+                    {
+                        "languageId": "LNG0002080",
+                        "languageTitle": "Albanian",
+                        "fadOrder": "2"
+                    }
+                ]
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "477",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 4.9",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {},
+            "phoneList": {
+                "phoneNumbers": {
+                    "cellPhone": "8013600533"
+                }
+            }
+        },
+        {
+            "facultyId": "FM00032398",
+            "facultyPK": "FM00032398",
+            "employeeId": "u0677224",
+            "nationalProviderID": "1104093392",
+            "track": "(Clinical)",
+            "preferredFullName": "Jamie W. Rhoads",
+            "lastName": "Rhoads",
+            "firstName": "Jamie",
+            "middleName": "W.",
+            "degrees": "M.D.",
+            "gender": "F",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00032398&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00032398",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<p style=\"text-align: left;\">Dr. Jamie Rhoads has specialized interest in medical dermatology and infectious disease dermatology. She has completed a two-year fellowship in psoriasis and published research in this area. She enjoys caring for patients with any general dermatologic concerns.</p>",
+            "clinicalBio": "Dr. Jamie Rhoads has specialized interest in medical dermatology and infectious disease dermatology. She has completed a two-year fellowship in psoriasis and published research in this area. She enjoys caring for patients with any general dermatologic concerns.",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001033",
+                    "facultyRankingTitle": "Associate Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "6723",
+                        "locationClinicPK": "CLOC001663",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG000749",
+                        "locationTitle": "Veterans Administration Medical Center",
+                        "locationBuildingId": "5453",
+                        "locationClinicID": "6651",
+                        "locationClinicPK": "CLOC000041",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology Clinic",
+                        "locationRoom": {},
+                        "locationStreet": "500 S Foothill Blvd",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84148",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": {},
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Veterans Administration Medical Center",
+                        "locationUrl": {}
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "1",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024410",
+                        "ufisSpecialtyId": "126120",
+                        "specialtyTitle": "Psoriasis and Phototherapy",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/conditions/psoriasis",
+                        "specialtyOrder": "2",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Psoriasis and Phototherapy",
+                        "lineageVer3SpecialtyID": "126120",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024410",
+                        "lineageVer2SubSpecialtyName": "Psoriasis and Phototherapy",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027871",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC026237",
+                        "ufisSpecialtyId": "124878",
+                        "specialtyTitle": "Dermatology Infectious Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/infectious-diseases",
+                        "specialtyOrder": "3",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103682",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000039",
+                        "lineageVer3ParentSpecialtyName": "Infectious Diseases",
+                        "lineageVer3SpecialtyName": "Dermatology Infectious Diseases",
+                        "lineageVer3SpecialtyID": "124878",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC026237",
+                        "lineageVer2SubSpecialtyName": "Dermatology Infectious Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "4",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": {
+                    "languageId": "LNG0000002",
+                    "languageTitle": "English",
+                    "fadOrder": "1"
+                }
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "178",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 4.9",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {
+                "researchInterest": [
+                    {
+                        "researchInterestId": "SPEC025362",
+                        "researchInterestDescription": "Immunobullous Diseases",
+                        "globalimpactList": {},
+                        "displayorder": "1"
+                    },
+                    {
+                        "researchInterestId": "SBS0022866",
+                        "researchInterestDescription": "Psoriasis",
+                        "globalimpactList": {},
+                        "displayorder": "2"
+                    }
+                ]
+            },
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00016504",
+            "facultyPK": "FM00016504",
+            "employeeId": "u0658123",
+            "nationalProviderID": "1376511600",
+            "track": "(Clinical)",
+            "preferredFullName": "Richard D. Sontheimer",
+            "lastName": "Sontheimer",
+            "firstName": "Richard",
+            "middleName": "Dennis",
+            "degrees": "M.D.",
+            "gender": "M",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00016504&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00016504",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<rte_p rte_style=\"text-align: left;\">Richard D. Sontheimer, MD, Professor of Dermatology has specialized expertise in the diagnosis and treatment of skin changes that occur in autoimmune rheumatic (arthritic) diseases like lupus, dermatomyositis, scleroderma, and vasculitis. He is Board certified in Internal Medicine, Dermatology and Dermatologic Immunology, and Diagnostic Laboratory Immunology. Dr. Sontheimer's main focus is patient care, education, and patient-oriented translational clinical research. <br/></rte_p><rte_p rte_style=\"text-align: left;\"><br/></rte_p><rte_p rte_style=\"text-align: left;\">Dr. Sontheimer is recognized internationally for his clinical expertise and research accomplishments relating to the skin problems experienced by lupus and dermatomyositis patients. He has been listed in Best Doctors of America and America's Top Doctors and has been elected to several prestigious medical and scientific research societies including the American Society of Clinical Investigation and Association of American Physicians.</rte_p>",
+            "clinicalBio": "Richard D. Sontheimer, MD, Professor of Dermatology has specialized expertise in the diagnosis and treatment of skin changes that occur in autoimmune rheumatic (arthritic) diseases like lupus, dermatomyositis, scleroderma, and vasculitis. He is Board certified in Internal Medicine, Dermatology and Dermatologic Immunology, and Diagnostic Laboratory Immunology. Dr. Sontheimer's main focus is patient care, education, and patient-oriented translational clinical research. Dr. Sontheimer is recognized internationally for his clinical expertise and research accomplishments relating to the skin problems experienced by lupus and dermatomyositis patients. He has been listed in Best Doctors of America and America's Top Doctors and has been elected to several prestigious medical and scientific research societies including the American Society of Clinical Investigation and Association of American Physicians.",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001035",
+                    "facultyRankingTitle": "Professor (Clinical)",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "6723",
+                        "locationClinicPK": "CLOC001663",
+                        "locationType": "Clinical",
+                        "locationOfficeName": {},
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC008420",
+                        "ufisSpecialtyId": "113323",
+                        "specialtyTitle": "Lupus",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "1",
+                        "meshCode": "D008177",
+                        "lineageVer3ParentSpecialtyID": "103511",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000123",
+                        "lineageVer3ParentSpecialtyName": "Rheumatology",
+                        "lineageVer3SpecialtyName": "Lupus",
+                        "lineageVer3SpecialtyID": "113323",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC008420",
+                        "lineageVer2SubSpecialtyName": "Lupus",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0008206",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": "D008177"
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "2",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": {
+                    "languageId": "LNG0000002",
+                    "languageTitle": "English",
+                    "fadOrder": "1"
+                }
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "309",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 4.9",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {},
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00026511",
+            "facultyPK": "FM00026511",
+            "employeeId": "u0040605",
+            "nationalProviderID": "1396068342",
+            "track": "External Unpaid Adjunct",
+            "preferredFullName": "Lindsay Wilson",
+            "lastName": "Wilson",
+            "firstName": "Lindsay",
+            "middleName": "H.",
+            "degrees": "M.D.",
+            "gender": "F",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00026511&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00026511",
+            "clinician": "N",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<rte_p rte_style=\"text-align: left;\">Lindsay H. Wilson, MD is the director of the Department of Dermatology’s first Women’s Skin Health Center that caters to services women want and accommodates their special needs.  Dr. Wilson has specialized expertise in the treatment of women’s skin diseases including adult female acne, hair loss, pregnancy dermatoses, skin cancer, vulvar diseases such as lichen planus, lichen sclerosus and lichen simplex chronicus. In addition, she enjoys caring for both male and female general and medical dermatology patients in her clinics.</rte_p>",
+            "clinicalBio": "Lindsay H. Wilson, MD is the director of the Department of Dermatology’s first Women’s Skin Health Center that caters to services women want and accommodates their special needs.  Dr. Wilson has specialized expertise in the treatment of women’s skin diseases including adult female acne, hair loss, pregnancy dermatoses, skin cancer, vulvar diseases such as lichen planus, lichen sclerosus and lichen simplex chronicus. In addition, she enjoys caring for both male and female general and medical dermatology patients in her clinics.",
+            "researchStatement": {},
+            "researchStatementNoMarkup": {},
+            "labUrlList": {},
+            "departmentList": {
+                "department": {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0001021",
+                    "facultyRankingTitle": "Adjunct Instructor",
+                    "facultyAppointment": "Adjunct",
+                    "parentRelationshipId": "REL0000016"
+                }
+            },
+            "divisions": {},
+            "locationList": {},
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC001611",
+                        "ufisSpecialtyId": "105004",
+                        "specialtyTitle": "General Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/general-dermatology",
+                        "specialtyOrder": "1",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "General Dermatology",
+                        "lineageVer3SpecialtyID": "105004",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001611",
+                        "lineageVer2SubSpecialtyName": "General Dermatology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000089",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "3",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": {
+                    "languageId": "LNG0000002",
+                    "languageTitle": "English",
+                    "fadOrder": "1"
+                }
+            },
+            "patientSurveyWebReview": {},
+            "researchInterestList": {
+                "researchInterest": [
+                    {
+                        "researchInterestId": "SBS0015948",
+                        "researchInterestDescription": "Women's Health",
+                        "globalimpactList": {},
+                        "displayorder": "1"
+                    },
+                    {
+                        "researchInterestId": "SPEC026515",
+                        "researchInterestDescription": "Pregnancy Dermatoses",
+                        "globalimpactList": {},
+                        "displayorder": "3"
+                    },
+                    {
+                        "researchInterestId": "SBS0004650",
+                        "researchInterestDescription": "Education, Medical",
+                        "globalimpactList": {},
+                        "displayorder": "5"
+                    }
+                ]
+            },
+            "phoneList": {}
+        },
+        {
+            "facultyId": "FM00002981",
+            "facultyPK": "FM00002981",
+            "employeeId": "u0028311",
+            "nationalProviderID": "1336235068",
+            "track": "Tenure-Line",
+            "preferredFullName": "John J. Zone",
+            "lastName": "Zone",
+            "firstName": "John",
+            "middleName": "Joseph",
+            "degrees": "M.D.",
+            "gender": "M",
+            "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00002981&thumb=1",
+            "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00002981",
+            "clinician": "Y",
+            "fellow": "N",
+            "researchSite": {
+                "0": " "
+            },
+            "facultyStatus": "A",
+            "clinicalBioHtml": "<p style=\"text-align: left;\">John J. Zone, MD has specialized expertise in the diagnosis and treatment of blistering diseases of the skin. This includes dermatitis herpetiformis, linear IgA disease, pemphigus and pemphigoid. He is board certified in dermatology, immunodermatology and internal medicine. He runs both a research and clinical laboratory dedicated to diagnosis, treatment and research of blistering diseases. Dr. Zone deals primarily with the practice of medical dermatology and expert management of dermatitis herpetiformis, gluten intolerence, linear IgA disease, pemphigus, pemphigoid, lichen planus and oral ulcers that are frequently related to immune conditions.</p>",
+            "clinicalBio": "John J. Zone, MD has specialized expertise in the diagnosis and treatment of blistering diseases of the skin. This includes dermatitis herpetiformis, linear IgA disease, pemphigus and pemphigoid. He is board certified in dermatology, immunodermatology and internal medicine. He runs both a research and clinical laboratory dedicated to diagnosis, treatment and research of blistering diseases. Dr. Zone deals primarily with the practice of medical dermatology and expert management of dermatitis herpetiformis, gluten intolerence, linear IgA disease, pemphigus, pemphigoid, lichen planus and oral ulcers that are frequently related to immune conditions.",
+            "researchStatement": {
+                "0": " "
+            },
+            "researchStatementNoMarkup": {
+                "0": " "
+            },
+            "labUrlList": {},
+            "departmentList": {
+                "department": [
+                    {
+                        "departmentId": "DPT0000070",
+                        "departmentTitle": "Dermatology",
+                        "primaryDepartment": "Y",
+                        "facultyRankingId": "RKL0000002",
+                        "facultyRankingTitle": "Professor",
+                        "facultyAppointment": "Primary",
+                        "parentRelationshipId": "REL0000016"
+                    },
+                    {
+                        "departmentId": "DPT0000078",
+                        "departmentTitle": "Pathology",
+                        "primaryDepartment": "N",
+                        "facultyRankingId": "RKL0001009",
+                        "facultyRankingTitle": "Adjunct Professor",
+                        "facultyAppointment": "Adjunct",
+                        "parentRelationshipId": "REL0000016"
+                    }
+                ]
+            },
+            "divisions": {},
+            "locationList": {
+                "location": [
+                    {
+                        "locationId": "5050",
+                        "locationTitle": "Healthcare, Educators, Leaders and Innovators Complex (HELIX)",
+                        "locationBuildingId": "5631",
+                        "locationClinicID": "8812",
+                        "locationClinicPK": {},
+                        "locationType": "Office",
+                        "locationOfficeName": "Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "30 N Mario Capecchi Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84112",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-6465",
+                        "locationFaxNumber": "(801) 581-5972",
+                        "searchBuildingName": "Healthcare, Educators, Leaders and Innovators Complex (HELIX)",
+                        "locationUrl": {}
+                    },
+                    {
+                        "locationId": "BLDG002462",
+                        "locationTitle": "Midvalley Health Center",
+                        "locationBuildingId": "5353",
+                        "locationClinicID": "8191",
+                        "locationClinicPK": "CLOC003563",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology",
+                        "locationRoom": {},
+                        "locationStreet": "243 East 6100 South",
+                        "locationCity": "Murray",
+                        "locationState": "UT",
+                        "locationPostalCode": "84107",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": {},
+                        "searchBuildingName": "Midvalley Health Center",
+                        "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                    },
+                    {
+                        "locationId": "BLDG000631",
+                        "locationTitle": "University of Utah Hospital",
+                        "locationBuildingId": "5192",
+                        "locationClinicID": "6420",
+                        "locationClinicPK": "CLOC000042",
+                        "locationType": "Clinical",
+                        "locationOfficeName": "Dermatology, Area E",
+                        "locationRoom": "E-13",
+                        "locationStreet": "50 N Medical Dr",
+                        "locationCity": "Salt Lake City",
+                        "locationState": "UT",
+                        "locationPostalCode": "84132",
+                        "locationPostalCode4": {},
+                        "locationPhoneNumber": "(801) 581-2955",
+                        "locationFaxNumber": "(801) 585-2702",
+                        "searchBuildingName": "University of Utah Hospital",
+                        "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                    }
+                ]
+            },
+            "specialtyList": {
+                "specialty": [
+                    {
+                        "specialtyId": "SPEC024407",
+                        "ufisSpecialtyId": "126117",
+                        "specialtyTitle": "Bullous (Blistering) Disease",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer3SpecialtyID": "126117",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024407",
+                        "lineageVer2SubSpecialtyName": "Bullous (Blistering) Disease",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027868",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC000023",
+                        "ufisSpecialtyId": "103666",
+                        "specialtyTitle": "Dermatology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": {},
+                        "lineageVer2ParentSpecialtyPK": {},
+                        "lineageVer3ParentSpecialtyName": {},
+                        "lineageVer3SpecialtyName": {},
+                        "lineageVer3SpecialtyID": {},
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": {},
+                        "lineageVer2SubSpecialtyName": {},
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": {},
+                        "lineageIsSubSpecialtyFlag": {},
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC024174",
+                        "ufisSpecialtyId": "125638",
+                        "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer3SpecialtyID": "125638",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC024174",
+                        "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0027811",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    },
+                    {
+                        "specialtyId": "SPEC001635",
+                        "ufisSpecialtyId": "105028",
+                        "specialtyTitle": "Immunopathology",
+                        "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                        "specialtyOrder": "100",
+                        "meshCode": {},
+                        "lineageVer3ParentSpecialtyID": "103666",
+                        "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                        "lineageVer3ParentSpecialtyName": "Dermatology",
+                        "lineageVer3SpecialtyName": "Immunopathology",
+                        "lineageVer3SpecialtyID": "105028",
+                        "lineageVer2SpecialtyPK": {},
+                        "lineageVer2SpecialtyName": {},
+                        "lineageVer2SubSpecialtyPK": "SPEC001635",
+                        "lineageVer2SubSpecialtyName": "Immunopathology",
+                        "lineageVer1SpecialtyPK": {},
+                        "lineageVer1SubSpecialtyPK": "SBS0000169",
+                        "lineageIsSubSpecialtyFlag": "Y",
+                        "lineageMeshKey": {}
+                    }
+                ]
+            },
+            "spokenLanguages": {
+                "language": {
+                    "languageId": "LNG0000002",
+                    "languageTitle": "English",
+                    "fadOrder": "0"
+                }
+            },
+            "patientSurveyWebReview": {
+                "surveyCount": "92",
+                "waitTimeAtClinic": "  .0",
+                "careProvider": " 5.0",
+                "cpExplanationOfCondition": "  .0",
+                "cpConcern": "  .0",
+                "cpEffortToInclude": "  .0",
+                "patientCPRecommendation": "  .0",
+                "cpTreatmentDiscussion": {},
+                "dwInsertDate": "09-JAN-24"
+            },
+            "researchInterestList": {
+                "researchInterest": [
+                    {
+                        "researchInterestId": "SBS0000085",
+                        "researchInterestDescription": "Bullous Disease",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0000169",
+                        "researchInterestDescription": "Immunopathology",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0002661",
+                        "researchInterestDescription": "Celiac Disease",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0004043",
+                        "researchInterestDescription": "Dermatitis Herpetiformis",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0008043",
+                        "researchInterestDescription": "Lichen Planus",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0008568",
+                        "researchInterestDescription": "Melanoma",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SBS0010355",
+                        "researchInterestDescription": "Pemphigus",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    },
+                    {
+                        "researchInterestId": "SPEC024681",
+                        "researchInterestDescription": "Linear IgA Disease",
+                        "globalimpactList": {},
+                        "displayorder": "0"
+                    }
+                ]
+            },
+            "phoneList": {}
+        }
+    ]
+}

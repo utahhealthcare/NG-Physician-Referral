@@ -1,0 +1,8 @@
+{
+  "/web-services/physician-referral": {
+    "target": "https://md.utah.edu",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

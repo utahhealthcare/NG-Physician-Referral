@@ -1,12 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ReferralDirectory } from "./pages/referral-directory/referral-directory";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+  imports: [ReferralDirectory],
+  template: '<app-referral-directory></app-referral-directory>'
 })
 export class App {
-  protected readonly title = signal('NG-Physician-Referral');
+  protected readonly title = signal('Physician Referral');
 }

@@ -1,0 +1,113 @@
+<!-- If no search, show nothing (or a small hint) -->
+@if (!hasSearch) {
+  <div class="gls-container">
+    <p class="gls-text-muted">Use the filters above to find a physician.</p>
+  </div>
+} @else {
+  <div class="gls-container">
+    @if (loading) {
+      <div class="gls-container" role="status" aria-live="polite" [attr.aria-busy]="true">
+        <span gls-spinner="ratio: 4.5" aria-hidden="true"></span>
+        <span class="sr-only">Loading results…</span>
+      </div>
+    } @else {
+      <p class="gls-h2 gls-margin-remove-bottom" aria-live="polite">
+        Showing {{ physicians.length }}
+        {{ physicians.length === 1 ? 'result' : 'results' }}
+        @if (contextLabel) {
+          for <span class="gls-text-primary">{{ contextLabel }}</span>
+        }
+      </p>
+
+      <p class="gls-text-right gls-margin-small-top">
+        <a class="gls-link-secondary" href="" (click)="print($event)">
+          Print {{ contextLabel }} Results 
+          <span class="gls-icon" gls-icon="printer"></span>
+        </a>
+      </p>
+
+      @if (physicians.length === 0) {
+        <p class="gls-text-muted">No physicians found.</p>
+      } @else {
+        <div class="gls-grid gls-grid-match gls-child-width-1-1 gls-child-width-1-2@s gls-grid-stack" gls-grid>
+          @for (p of physicians; track trackById($index, p)) {
+            <div>
+              <div class="gls-card gls-card-default gls-card-body">
+                @if (photo(p)) {
+                  <img
+                    [src]="photo(p)!"
+                    alt=""
+                    width="100"
+                    class="gls-align-center"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                }
+
+                <h3 class="gls-card-title gls-margin-top gls-margin-xsmall-bottom">
+                  {{ displayName(p) }}<br />
+                  @if (degrees(p)) {
+                    <span class="gls-text-small">{{ degrees(p) }}</span>
+                  }
+                </h3>
+
+                @if (p.specialties?.length) {
+                  <p class="gls-text-muted gls-margin-xsmall-top gls-text-xsmall">
+                    <strong>Specialties: </strong><br />
+                    @for (s of p.specialties; track s.id; let last = $last) {
+                      <span>{{ s.title }}{{ last ? '' : ', ' }}</span>
+                    }
+                  </p>
+                }
+
+                <hr />
+
+                @if (p.cellPhone) {
+                  <p class="gls-margin-small-bottom">
+                    <span gls-icon="phone" class="gls-icon"></span>
+                    Call or Text:
+                    <a class="a-button a-button--expand" [href]="telHref(p.cellPhone)">{{ phoneText(p.cellPhone) }}</a>
+                  </p>
+                }
+
+                @if (p.locations?.length) {
+                  <div class="gls-grid" gls-grid>
+                    @for (loc of p.locations; track loc.title) {
+                      <div class="gls-width-1-1@s gls-width-1-2@m">
+                        <p class="gls-text-xsmall gls-margin-remove">
+                          <span><strong>{{ loc.title }}</strong><br /></span>
+                          @if (loc.address1) {
+                            <span>{{ loc.address1 }}<br /></span>
+                          }
+                          @if (loc.city || loc.state || loc.zip) {
+                            <span>
+                              {{ loc.city ? loc.city + ', ' : '' }}
+                              {{ loc.state }}
+                              {{ loc.zip ? ', ' + loc.zip : '' }}<br />
+                            </span>
+                          }
+                          @if (phoneText(loc.phone)) {
+                            <span>
+                              Phone:
+                              <a class="phone-number" [href]="telHref(phoneText(loc.phone))">{{ phoneText(loc.phone) }}</a>
+                            </span><br />
+                          }
+                        </p>
+                      </div>
+                    }
+                  </div>
+                }
+
+                @if (profileUrl(p)) {
+                  <p class="gls-margin-medium-top">
+                    <a class="gls-link" target="_blank" rel="noopener" [href]="profileUrl(p)!">My Profile</a>
+                  </p>
+                }
+              </div>
+            </div>
+          }
+        </div>
+      }
+    }
+  </div>
+}

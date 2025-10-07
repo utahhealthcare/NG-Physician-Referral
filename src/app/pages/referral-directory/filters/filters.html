@@ -1,0 +1,42 @@
+<section class="gls-section gls-section-xsmall" aria-labelledby="ref-providers-title" aria-describedby="ref-providers-help">
+  <div class="gls-container">
+    <h2 id="ref-providers-title" class="gls-text-primary gls-text-uppercase">
+      Search Referring Providers
+    </h2>
+    <!-- Screen-reader helper: explains behavior once per page -->
+    <p id="ref-providers-help" class="sr-only">
+      Start typing at least three characters to see suggestions. Choose either a physician or a specialty, not both.
+    </p>
+
+    <!-- Physician autocomplete -->
+    <app-autocomplete-input
+      [inputId]="'physician-input'"
+      [labelId]="'Search by Physician Name'"
+      [mode]="'physician'"
+      [placeholder]="'Type a physician’s name…'"
+      [ariaLabel]="'Search physicians'"
+      [value]="form.controls.physicianId.value || ''"
+      (pick)="onPhysicianPick($event)"
+      (valueChange)="onPhysicianType($event)">
+    </app-autocomplete-input>
+
+    <!-- Semantic, accessible separator -->
+    <div class="gls-margin-small-top gls-margin-small-bottom" role="separator" aria-label="Or">
+      <p class="gls-text-center gls-text-xlarge gls-text-secondary gls-text-uppercase" aria-hidden="true">
+        <b>Or</b>
+      </p>
+    </div>
+
+    <!-- Specialty autocomplete -->
+    <app-autocomplete-input
+      [inputId]="'specialties-input'"
+      [labelId]="'Search by Specialty'"
+      [mode]="'specialty'"
+      [placeholder]="'Type a specialty…'"
+      [ariaLabel]="'Search specialties'"
+      [value]="form.controls.specialtyId.value || ''"
+      (pick)="onSpecialtyPick($event)"
+      (valueChange)="onSpecialtyType($event)">
+    </app-autocomplete-input>
+  </div>
+</section>

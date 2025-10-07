@@ -1,0 +1,269 @@
+{
+    "facultyMember": {
+        "facultyPK": "FM00002981",
+        "employeeId": "u0028311",
+        "nationalProviderID": "1336235068",
+        "preferredFullName": "John J. Zone",
+        "lastName": "Zone",
+        "firstName": "John",
+        "midName": "Joseph",
+        "degrees": "M.D.",
+        "clinician": "Y",
+        "fellow": "N",
+        "facultyStatus": "Active",
+        "gender": "Male",
+        "pictureUrl": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00002981&thumb=1",
+        "pictureUrl_Pro": "https://securembm.uuhsc.utah.edu/zeus/public/mbm-media/faculty-profile?facultyPK=FM00002981",
+        "email": "john.zone@hsc.utah.edu",
+        "myChartFlag": "Y",
+        "onlineScheduleFlag": "N",
+        "clinicalBioHtml": {},
+        "clinicalBio": {},
+        "researchStatement": {},
+        "researchStatementNoMarkup": {},
+        "labUrlList": {},
+        "departmentList": {
+            "department": [
+                {
+                    "departmentId": "DPT0000070",
+                    "departmentTitle": "Dermatology",
+                    "primaryDepartment": "Y",
+                    "facultyRankingId": "RKL0000002",
+                    "facultyRankingTitle": "Professor",
+                    "facultyAppointment": "Primary",
+                    "parentRelationshipId": "REL0000016"
+                },
+                {
+                    "departmentId": "DPT0000078",
+                    "departmentTitle": "Pathology",
+                    "primaryDepartment": "N",
+                    "facultyRankingId": "RKL0001009",
+                    "facultyRankingTitle": "Adjunct Professor",
+                    "facultyAppointment": "Adjunct",
+                    "parentRelationshipId": "REL0000016"
+                }
+            ]
+        },
+        "divisions": {},
+        "locationList": {
+            "location": [
+                {
+                    "locationId": "5050",
+                    "locationTitle": "Healthcare, Educators, Leaders and Innovators Complex (HELIX)",
+                    "locationBuildingId": "5631",
+                    "locationClinicID": "8812",
+                    "locationClinicPK": {},
+                    "locationType": "Office",
+                    "locationOfficeName": "Dermatology",
+                    "locationRoom": {},
+                    "locationStreet": "30 N Mario Capecchi Dr",
+                    "locationCity": "Salt Lake City",
+                    "locationState": "UT",
+                    "locationPostalCode": "84112",
+                    "locationPostalCode4": {},
+                    "locationPhoneNumber": "(801) 581-6465",
+                    "locationFaxNumber": "(801) 581-5972",
+                    "searchBuildingName": "Healthcare, Educators, Leaders and Innovators Complex (HELIX)",
+                    "locationUrl": {}
+                },
+                {
+                    "locationId": "BLDG002462",
+                    "locationTitle": "Midvalley Health Center",
+                    "locationBuildingId": "5353",
+                    "locationClinicID": "8191",
+                    "locationClinicPK": "CLOC003563",
+                    "locationType": "Clinical",
+                    "locationOfficeName": "Dermatology",
+                    "locationRoom": {},
+                    "locationStreet": "243 East 6100 South",
+                    "locationCity": "Murray",
+                    "locationState": "UT",
+                    "locationPostalCode": "84107",
+                    "locationPostalCode4": {},
+                    "locationPhoneNumber": "(801) 581-2955",
+                    "locationFaxNumber": {},
+                    "searchBuildingName": "Midvalley Health Center",
+                    "locationUrl": "https://healthcare.utah.edu/locations/midvalley"
+                },
+                {
+                    "locationId": "BLDG000631",
+                    "locationTitle": "University of Utah Hospital",
+                    "locationBuildingId": "5192",
+                    "locationClinicID": "6420",
+                    "locationClinicPK": "CLOC000042",
+                    "locationType": "Clinical",
+                    "locationOfficeName": "Dermatology, Area E",
+                    "locationRoom": "E-13",
+                    "locationStreet": "50 N Medical Dr",
+                    "locationCity": "Salt Lake City",
+                    "locationState": "UT",
+                    "locationPostalCode": "84132",
+                    "locationPostalCode4": {},
+                    "locationPhoneNumber": "(801) 581-2955",
+                    "locationFaxNumber": "(801) 585-2702",
+                    "searchBuildingName": "University of Utah Hospital",
+                    "locationUrl": "https://healthcare.utah.edu/locations/hospital"
+                }
+            ]
+        },
+        "specialtyList": {
+            "specialty": [
+                {
+                    "specialtyId": "SPEC024407",
+                    "ufisSpecialtyId": "126117",
+                    "specialtyTitle": "Bullous (Blistering) Disease",
+                    "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                    "specialtyOrder": "100",
+                    "meshCode": {},
+                    "lineageVer3ParentSpecialtyID": "103666",
+                    "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                    "lineageVer3ParentSpecialtyName": "Dermatology",
+                    "lineageVer3SpecialtyName": "Bullous (Blistering) Disease",
+                    "lineageVer3SpecialtyID": "126117",
+                    "lineageVer2SpecialtyPK": {},
+                    "lineageVer2SpecialtyName": {},
+                    "lineageVer2SubSpecialtyPK": "SPEC024407",
+                    "lineageVer2SubSpecialtyName": "Bullous (Blistering) Disease",
+                    "lineageVer1SpecialtyPK": {},
+                    "lineageVer1SubSpecialtyPK": "SBS0027868",
+                    "lineageIsSubSpecialtyFlag": "Y",
+                    "lineageMeshKey": {}
+                },
+                {
+                    "specialtyId": "SPEC000023",
+                    "ufisSpecialtyId": "103666",
+                    "specialtyTitle": "Dermatology",
+                    "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                    "specialtyOrder": "100",
+                    "meshCode": {},
+                    "lineageVer3ParentSpecialtyID": {},
+                    "lineageVer2ParentSpecialtyPK": {},
+                    "lineageVer3ParentSpecialtyName": {},
+                    "lineageVer3SpecialtyName": {},
+                    "lineageVer3SpecialtyID": {},
+                    "lineageVer2SpecialtyPK": {},
+                    "lineageVer2SpecialtyName": {},
+                    "lineageVer2SubSpecialtyPK": {},
+                    "lineageVer2SubSpecialtyName": {},
+                    "lineageVer1SpecialtyPK": {},
+                    "lineageVer1SubSpecialtyPK": {},
+                    "lineageIsSubSpecialtyFlag": {},
+                    "lineageMeshKey": {}
+                },
+                {
+                    "specialtyId": "SPEC024174",
+                    "ufisSpecialtyId": "125638",
+                    "specialtyTitle": "Immune, Autoimmune, and Rheumatic Diseases",
+                    "specialtyUrl": "https://healthcare.utah.edu/dermatology/services/autoimmune-skin-diseases",
+                    "specialtyOrder": "100",
+                    "meshCode": {},
+                    "lineageVer3ParentSpecialtyID": "103666",
+                    "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                    "lineageVer3ParentSpecialtyName": "Dermatology",
+                    "lineageVer3SpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                    "lineageVer3SpecialtyID": "125638",
+                    "lineageVer2SpecialtyPK": {},
+                    "lineageVer2SpecialtyName": {},
+                    "lineageVer2SubSpecialtyPK": "SPEC024174",
+                    "lineageVer2SubSpecialtyName": "Immune, Autoimmune, and Rheumatic Diseases",
+                    "lineageVer1SpecialtyPK": {},
+                    "lineageVer1SubSpecialtyPK": "SBS0027811",
+                    "lineageIsSubSpecialtyFlag": "Y",
+                    "lineageMeshKey": {}
+                },
+                {
+                    "specialtyId": "SPEC001635",
+                    "ufisSpecialtyId": "105028",
+                    "specialtyTitle": "Immunopathology",
+                    "specialtyUrl": "https://healthcare.utah.edu/dermatology",
+                    "specialtyOrder": "100",
+                    "meshCode": {},
+                    "lineageVer3ParentSpecialtyID": "103666",
+                    "lineageVer2ParentSpecialtyPK": "SPEC000023",
+                    "lineageVer3ParentSpecialtyName": "Dermatology",
+                    "lineageVer3SpecialtyName": "Immunopathology",
+                    "lineageVer3SpecialtyID": "105028",
+                    "lineageVer2SpecialtyPK": {},
+                    "lineageVer2SpecialtyName": {},
+                    "lineageVer2SubSpecialtyPK": "SPEC001635",
+                    "lineageVer2SubSpecialtyName": "Immunopathology",
+                    "lineageVer1SpecialtyPK": {},
+                    "lineageVer1SubSpecialtyPK": "SBS0000169",
+                    "lineageIsSubSpecialtyFlag": "Y",
+                    "lineageMeshKey": {}
+                }
+            ]
+        },
+        "spokenLanguages": {
+            "language": {
+                "languageId": "LNG0000002",
+                "languageTitle": "English",
+                "fadOrder": "0"
+            }
+        },
+        "patientSurveyWebReview": {
+            "surveyCount": "92",
+            "waitTimeAtClinic": "  .0",
+            "careProvider": " 5.0",
+            "cpExplanationOfCondition": "  .0",
+            "cpConcern": "  .0",
+            "cpEffortToInclude": "  .0",
+            "patientCPRecommendation": "  .0",
+            "cpTreatmentDiscussion": {},
+            "dwInsertDate": "09-JAN-24"
+        },
+        "researchInterestList": {
+            "researchInterest": [
+                {
+                    "researchInterestId": "SBS0000085",
+                    "researchInterestDescription": "Bullous Disease",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0000169",
+                    "researchInterestDescription": "Immunopathology",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0002661",
+                    "researchInterestDescription": "Celiac Disease",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0004043",
+                    "researchInterestDescription": "Dermatitis Herpetiformis",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0008043",
+                    "researchInterestDescription": "Lichen Planus",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0008568",
+                    "researchInterestDescription": "Melanoma",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SBS0010355",
+                    "researchInterestDescription": "Pemphigus",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                },
+                {
+                    "researchInterestId": "SPEC024681",
+                    "researchInterestDescription": "Linear IgA Disease",
+                    "globalimpactList": {},
+                    "displayorder": "0"
+                }
+            ]
+        },
+        "phoneList": {}
+    }
+}

@@ -1,0 +1,24 @@
+<app-billboard></app-billboard>
+
+<section class="gls-section gls-section-xsmall">
+  <div class="gls-container">
+    <p>Use the + button above to learn how to add this app to your homescreen</p>
+    <p>If you cannot reach a provider because a phone number is not listed or is incorrect, please call the Referral Services Center.</p>
+  </div>
+</section>
+
+<app-filters
+  [selectedPhysician]="selectedPhysician()"
+  [selectedSpecialty]="selectedSpecialty()"
+  (filterChange)="onFilterChange($event)">
+</app-filters>
+
+<app-physician-cards
+  class="gls-section gls-section-xsmall gls-section-default gls-text-center"
+  [physicians]="physicians()"
+  [loading]="loading()"
+  [contextLabel]="contextLabel()"
+  [hasSearch]="!!selectedPhysician() || !!selectedSpecialty()">
+</app-physician-cards>
+
+<app-contact-info></app-contact-info>
