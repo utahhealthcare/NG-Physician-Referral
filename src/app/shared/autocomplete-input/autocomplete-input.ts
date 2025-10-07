@@ -2,14 +2,15 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output, inject, OnChanges, SimpleChanges } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, switchMap, map, startWith, of, shareReplay, tap, firstValueFrom } from 'rxjs';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { DirectoryApiService } from '../../core/services/physician-api';
 
 export type AutoMode = 'physician' | 'specialty';
 
 interface Suggestion {
   id: string;
-  label: string;
-  htmlLabel?: string;
+  label: string;       // visible text only (never show IDs)
+  htmlLabel?: string;  // label with <strong> highlights
   raw: any;
 }
 
@@ -25,30 +26,27 @@ export class AutocompleteInput implements OnChanges {
 
   /** Physician or Specialty suggestions */
   @Input() mode: AutoMode = 'physician';
+  /** Placeholder and a11y text */
   @Input() placeholder = 'Start typing…';
   @Input() ariaLabel = 'Search';
+  /** Minimum characters before suggestions appear */
   @Input() minLength = 3;
-  /** ID attribute for the input and the label element id */
+  /** IDs for input and label (for a11y) */
   @Input() inputId?: string;
   @Input() labelId?: string;
 
   /**
-   * External value for the input field (DISPLAY value).
-   * NOTE: The parent can still store the selected ID in its form/state, but it should pass the
-   * user-facing text here. If an ID is passed instead, we try to resolve it to a label.
+   * External display value (human-readable).
+   * If an ID is passed by mistake (e.g., u0000000 or SPECxxxxx), we resolve to a label.
    */
   @Input() value: string = '';
 
-  /** Emits when a suggestion is chosen (emits the selected ID) */
+  /** Emits when a suggestion is chosen (ID only) */
   @Output() pick = new EventEmitter<{ type: AutoMode; id: string }>();
-  /** Emits on user typing so the parent can react if needed */
+  /** Emits on user typing so parent can mirror the text if desired */
   @Output() valueChange = new EventEmitter<string>();
 
-  get hasValue(): boolean {
-    return !!(this.ctrl.value && this.ctrl.value.length);
-  }
-
-  /** Textbox */
+  /** Textbox control */
   ctrl = new FormControl<string>('');
 
   suggestions: Suggestion[] = [];
@@ -58,11 +56,18 @@ export class AutocompleteInput implements OnChanges {
   private physicians$?: import('rxjs').Observable<any[]>;
   private specialties$?: import('rxjs').Observable<any[]>;
 
+  get hasValue(): boolean {
+    const v = this.ctrl.value ?? '';
+    return v.trim().length > 0;
+  }
+
+  // --- lifecycle ---
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['value']) {
       const incoming = this.value ?? '';
-      // If empty coming from parent: clear UI
-      if (!incoming) {
+
+      // Empty -> clear UI
+      if (!incoming.trim()) {
         this.ctrl.setValue('', { emitEvent: false });
         this.suggestions = [];
         this.open = false;
@@ -70,16 +75,16 @@ export class AutocompleteInput implements OnChanges {
         return;
       }
 
-      // If parent accidentally passed an ID (u0000000 or SPECxxxxx), resolve to a label for display.
+      // If parent passed an ID by mistake, resolve to label so users never see IDs
       if (this.isLikelyId(incoming)) {
         this.resolveLabelFromId(incoming).then(label => {
-          const display = label || incoming; // fallback to raw
+          const display = label || incoming;
           if ((this.ctrl.value ?? '') !== display) {
             this.ctrl.setValue(display, { emitEvent: false });
           }
         });
       } else {
-        // Normal case: parent passed human-readable text
+        // Normal display value
         if ((this.ctrl.value ?? '') !== incoming) {
           this.ctrl.setValue(incoming, { emitEvent: false });
         }
@@ -87,6 +92,25 @@ export class AutocompleteInput implements OnChanges {
     }
   }
 
+  constructor() {
+    this.ctrl.valueChanges
+      .pipe(
+        startWith(''),
+        map(v => (v ?? '').trim()),
+        distinctUntilChanged(),
+        tap(v => this.valueChange.emit(v)),
+        debounceTime(150),
+        switchMap(q => this.queryToSuggestions(q)),
+        takeUntilDestroyed()
+      )
+      .subscribe((sugs: Suggestion[]) => {
+        this.suggestions = sugs;
+        this.open = this.suggestions.length > 0;
+        this.highlighted = this.suggestions.length ? 0 : -1;
+      });
+  }
+
+  // --- data sources (cached once per component instance) ---
   private loadPhysicians$() {
     if (!this.physicians$) {
       this.physicians$ = this.api.getPhysicians().pipe(shareReplay(1));
@@ -101,74 +125,75 @@ export class AutocompleteInput implements OnChanges {
     return this.specialties$;
   }
 
-  constructor() {
-    this.ctrl.valueChanges
-      .pipe(
-        startWith(''),
-        map(v => (v ?? '').trim()),
-        distinctUntilChanged(),
-        tap(v => this.valueChange.emit(v)),
-        debounceTime(100),
-        switchMap(q => {
-          const text = (q ?? '').trim();
-          if (text.length < this.minLength) {
-            this.suggestions = [];
-            this.highlighted = -1;
-            this.open = false;
-            return of([]);
+  // --- search/filter pipeline ---
+  private queryToSuggestions(text: string) {
+    const q = (text ?? '').trim();
+
+    if (q.length < this.minLength) {
+      this.open = false;
+      this.highlighted = -1;
+      return of<Suggestion[]>([]);
+    }
+
+    this.open = true;
+
+    const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+    const includesAll = (hay: string) => tokens.every(t => hay.includes(t));
+
+    if (this.mode === 'physician') {
+      return this.loadPhysicians$().pipe(
+        map((list: Array<{ fullName?: string; firstName?: string; lastName?: string; unid?: string; employeeId?: string }>) => {
+          const filtered = list.filter(p => {
+            const full = (p.fullName || `${p.firstName ?? ''} ${p.lastName ?? ''}`).toLowerCase();
+            return includesAll(full);
+          });
+
+          // Map to suggestions and de-duplicate by ID
+          const byId = new Map<string, Suggestion>();
+          for (const p of filtered) {
+            const id = String((p as any).unid || (p as any).employeeId || '').trim();
+            if (!id) continue;
+            const name = (p.fullName || `${p.firstName ?? ''} ${p.lastName ?? ''}`.trim()).trim();
+            if (!name) continue;
+            if (!byId.has(id)) {
+              byId.set(id, {
+                id,
+                label: name,
+                htmlLabel: this.highlightQuery(name, q),
+                raw: p
+              });
+            }
           }
-          this.open = true;
-
-          const tokens = text.toLowerCase().split(/\s+/).filter(Boolean);
-          const includesAll = (hay: string) =>
-            tokens.every(t => hay.includes(t));
-
-          if (this.mode === 'physician') {
-            return this.loadPhysicians$().pipe(
-              map((list: Array<{ fullName?: string; firstName?: string; lastName?: string; unid?: string; employeeId?: string }>) => {
-                const filtered = list.filter(p => {
-                  const full = (p.fullName || `${p.firstName ?? ''} ${p.lastName ?? ''}`).toLowerCase();
-                  return includesAll(full);
-                });
-
-                return filtered
-                  .map(p => {
-                    const unid = (p as any).unid || (p as any).employeeId; // internal id only (never shown)
-                    if (!unid) return null;
-                    const name = p.fullName || `${p.firstName ?? ''} ${p.lastName ?? ''}`.trim();
-                    return {
-                      id: unid,
-                      label: name,                               // visible text
-                      htmlLabel: this.highlightQuery(name, text),// visible text with <strong>
-                      raw: p,
-                    } as Suggestion;
-                  })
-                  .filter(Boolean)
-                  .slice(0, 8) as Suggestion[];
-              })
-            );
-          } else {
-            return this.loadSpecialties$().pipe(
-              map((list: Array<{ id: string; title: string }>) => {
-                const filtered = list.filter(s => includesAll(s.title.toLowerCase()));
-                return filtered.slice(0, 8).map(s => ({
-                  id: s.id,                                     // internal id only (never shown)
-                  label: s.title,                               // visible text
-                  htmlLabel: this.highlightQuery(s.title, text),
-                  raw: s,
-                }) as Suggestion);
-              })
-            );
-          }
+          return Array.from(byId.values()).slice(0, 8);
         })
-      )
-      .subscribe((sugs: any) => {
-        this.suggestions = sugs as Suggestion[];
-        this.open = this.suggestions.length > 0;
-        this.highlighted = this.suggestions.length ? 0 : -1;
-      });
+      );
+    } else {
+      return this.loadSpecialties$().pipe(
+        map((list: Array<{ id: string; title: string }>) => {
+          const filtered = list.filter(s => includesAll(s.title.toLowerCase()));
+
+          // De-duplicate by specialty id
+          const byId = new Map<string, Suggestion>();
+          for (const s of filtered) {
+            const id = String(s.id || '').trim();
+            const title = (s.title || '').trim();
+            if (!id || !title) continue;
+            if (!byId.has(id)) {
+              byId.set(id, {
+                id,
+                label: title,
+                htmlLabel: this.highlightQuery(title, q),
+                raw: s
+              });
+            }
+          }
+          return Array.from(byId.values()).slice(0, 8);
+        })
+      );
+    }
   }
 
+  // --- UI events ---
   onFocus() {
     this.open = this.suggestions.length > 0;
   }
@@ -196,21 +221,14 @@ export class AutocompleteInput implements OnChanges {
   }
 
   choose(s: Suggestion) {
-    // Always display the human-readable label
+    // Show human-readable label in the input
     this.ctrl.setValue(s.label, { emitEvent: false });
     this.valueChange.emit(s.label);
     this.open = false;
 
-    // Emit only the ID upward so the parent state can store the machine value
+    // Emit ID to the parent
     const id = String(s.id || '').trim();
     if (id) this.pick.emit({ type: this.mode, id });
-  }
-
-  highlightQuery(label: string, query: string): string {
-    if (!query) return label;
-    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // escape regex chars
-    const regex = new RegExp(`(${escaped})`, 'ig');
-    return label.replace(regex, '<strong>$1</strong>');
   }
 
   clear() {
@@ -219,6 +237,14 @@ export class AutocompleteInput implements OnChanges {
     this.suggestions = [];
     this.open = false;
     this.highlighted = -1;
+  }
+
+  // --- helpers ---
+  highlightQuery(label: string, query: string): string {
+    if (!query) return label;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`(${escaped})`, 'ig');
+    return label.replace(regex, '<strong>$1</strong>');
   }
 
   /** Detects an ID-like token (UNID such as u0000000 or specialty id like SPEC12345) */
@@ -245,6 +271,7 @@ export class AutocompleteInput implements OnChanges {
         if (s) return s.title || null;
       }
     } catch {
+      // ignore and fall through
     }
     return null;
   }

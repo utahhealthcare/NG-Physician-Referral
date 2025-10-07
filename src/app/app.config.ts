@@ -1,10 +1,15 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
+import { ApplicationConfig, provideAppInitializer, inject, provideZonelessChangeDetection } from '@angular/core';
 import { provideHttpClient } from '@angular/common/http';
+import { DirectoryApiService } from './core/services/physician-api';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideHttpClient(),
-    provideBrowserGlobalErrorListeners(),
-    provideZonelessChangeDetection()
-  ]
+    DirectoryApiService,
+    provideZonelessChangeDetection(),
+    provideAppInitializer(async () => {
+      await inject(DirectoryApiService).warmCaches();
+    }),
+    
+  ],
 };
