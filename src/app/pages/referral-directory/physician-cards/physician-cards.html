@@ -29,7 +29,7 @@
       @if (physicians.length === 0) {
         <p class="gls-text-muted">No physicians found.</p>
       } @else {
-        <div class="gls-grid gls-grid-match gls-child-width-1-1 gls-child-width-1-2@s gls-grid-stack" gls-grid>
+        <div class="gls-grid gls-grid-match gls-child-width-1-1 gls-child-width-1-3@s gls-grid-stack" gls-grid>
           @for (p of physicians; track trackById($index, p)) {
             <div>
               <div class="gls-card gls-card-default gls-card-body">

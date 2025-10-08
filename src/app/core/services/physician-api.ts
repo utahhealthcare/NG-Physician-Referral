@@ -1,8 +1,9 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { firstValueFrom, Observable, of } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { map, shareReplay, take } from 'rxjs/operators';
 import { environment } from '../../../environments/environment';
+import { forkJoin } from 'rxjs';
 import {
   SpecialtiesResponse,
   SpecialtyItem,
@@ -21,8 +22,7 @@ import {
 @Injectable({ providedIn: 'root' })
 export class DirectoryApiService {
   private http = inject(HttpClient);
-
-  /** Cache for specialty -> physicians HTTP requests */
+  private _warmed$?: import('rxjs').Observable<void>;
   private specialtyReqCache = new Map<string, Observable<Physician[]>>();
 
   /** In-memory caches for list endpoints (warmed at startup) */
@@ -184,5 +184,15 @@ export class DirectoryApiService {
     const hit = this.physicianByUnid().get(key);
     if (!hit) return null;
     return hit.fullName || `${hit.firstName ?? ''} ${hit.lastName ?? ''}`.trim() || null;
+  }
+
+  warmCachesOnce() {
+    if (!this._warmed$) {
+      this._warmed$ = forkJoin([
+        this.getSpecialties().pipe(take(1)),
+        this.getPhysicians().pipe(take(1))
+      ]).pipe(map(() => void 0), shareReplay({ bufferSize: 1, refCount: true }));
+    }
+    return this._warmed$;
   }
 }

@@ -11,6 +11,15 @@
   <script src="https://utahhealthcare.github.io/gloss-docs/gloss-source/dist/js/gloss-icons.min.js"></script>
 </head>
 <body>
-  <app-physician-referral></app-physician-referral>
+  <div id="pr-app-host">
+    <!-- boot splash (visible before Angular is ready) -->
+    <div id="pr-boot" class="gls-section gls-section-small gls-text-center" role="status" aria-live="polite">
+      <span gls-spinner="ratio: 3.5" aria-hidden="true"></span>
+      <p class="gls-margin-small-top">Loading physician referral…</p>
+    </div>
+
+    <!-- Angular app mounts here -->
+    <app-physician-referral></app-physician-referral>
+  </div>
 </body>
 </html>

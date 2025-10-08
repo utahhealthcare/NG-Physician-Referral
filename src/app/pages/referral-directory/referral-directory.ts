@@ -6,6 +6,7 @@ import { DirectoryApiService } from '../../core/services/physician-api';
 import { ContactInfo } from './contact-info/contact-info';
 import { Billboard } from './billboard/billboard';
 import { Physician } from '../../core/models/physicians-model';
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-referral-directory',
@@ -18,6 +19,7 @@ export class ReferralDirectory {
   selectedSpecialty = signal<string | null>(null);
   loading = signal(false);
   physicians = signal<Physician[]>([]);
+  warming = signal(true);
 
   private lastPickedLabel = signal<string | null>(null);
 
@@ -59,6 +61,14 @@ export class ReferralDirectory {
           error: () => this.loading.set(false),
         });
       }
+    });
+  }
+
+  ngOnInit() {
+    this.api.warmCachesOnce().subscribe({
+      next: () => {},
+      error: () => this.warming.set(false),
+      complete: () => this.warming.set(false)
     });
   }
 

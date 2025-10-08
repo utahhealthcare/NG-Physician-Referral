@@ -1,4 +1,10 @@
 <app-billboard></app-billboard>
+<section class="gls-section gls-text-center" *ngIf="warming()">
+  <span gls-spinner="ratio: 3.5" aria-hidden="true"></span>
+  <p class="gls-margin-small-top" role="status" aria-live="polite">
+    Preparing search…
+  </p>
+</section>
 
 <section class="gls-section gls-section-xsmall">
   <div class="gls-container">

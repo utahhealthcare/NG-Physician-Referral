@@ -9,8 +9,8 @@ export type AutoMode = 'physician' | 'specialty';
 
 interface Suggestion {
   id: string;
-  label: string;       // visible text only (never show IDs)
-  htmlLabel?: string;  // label with <strong> highlights
+  label: string;
+  htmlLabel?: string;
   raw: any;
 }
 
@@ -24,14 +24,10 @@ interface Suggestion {
 export class AutocompleteInput implements OnChanges {
   private api = inject(DirectoryApiService);
 
-  /** Physician or Specialty suggestions */
   @Input() mode: AutoMode = 'physician';
-  /** Placeholder and a11y text */
   @Input() placeholder = 'Start typing…';
   @Input() ariaLabel = 'Search';
-  /** Minimum characters before suggestions appear */
   @Input() minLength = 3;
-  /** IDs for input and label (for a11y) */
   @Input() inputId?: string;
   @Input() labelId?: string;
 
@@ -46,9 +42,7 @@ export class AutocompleteInput implements OnChanges {
   /** Emits on user typing so parent can mirror the text if desired */
   @Output() valueChange = new EventEmitter<string>();
 
-  /** Textbox control */
   ctrl = new FormControl<string>('');
-
   suggestions: Suggestion[] = [];
   open = false;
   highlighted = -1;
@@ -56,29 +50,40 @@ export class AutocompleteInput implements OnChanges {
   private physicians$?: import('rxjs').Observable<any[]>;
   private specialties$?: import('rxjs').Observable<any[]>;
 
+  // feedback-loop guards
+  private isFocused = false;
+  private lastUserValue = '';
+
   get hasValue(): boolean {
     const v = this.ctrl.value ?? '';
     return v.trim().length > 0;
   }
 
-  // --- lifecycle ---
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['value']) {
-      const incoming = this.value ?? '';
+      const incoming = (this.value ?? '').trim();
 
-      // Empty -> clear UI
-      if (!incoming.trim()) {
-        this.ctrl.setValue('', { emitEvent: false });
+      // If user is actively typing, do not overwrite their input.
+      if (this.isFocused) return;
+
+      // If empty -> clear UI
+      if (!incoming) {
+        if ((this.ctrl.value ?? '') !== '') {
+          this.ctrl.setValue('', { emitEvent: false });
+        }
         this.suggestions = [];
         this.open = false;
         this.highlighted = -1;
         return;
       }
 
+      // If the incoming value is exactly what we most recently emitted, ignore it.
+      if (incoming === this.lastUserValue) return;
+
       // If parent passed an ID by mistake, resolve to label so users never see IDs
       if (this.isLikelyId(incoming)) {
         this.resolveLabelFromId(incoming).then(label => {
-          const display = label || incoming;
+          const display = (label ?? incoming);
           if ((this.ctrl.value ?? '') !== display) {
             this.ctrl.setValue(display, { emitEvent: false });
           }
@@ -96,10 +101,14 @@ export class AutocompleteInput implements OnChanges {
     this.ctrl.valueChanges
       .pipe(
         startWith(''),
-        map(v => (v ?? '').trim()),
+        map(v => (v ?? '')),
+        // keep spaces the user types (for names with spaces) but normalize comparisons
         distinctUntilChanged(),
-        tap(v => this.valueChange.emit(v)),
-        debounceTime(150),
+        tap(v => {
+          this.lastUserValue = v;
+          this.valueChange.emit(v);
+        }),
+        debounceTime(120),
         switchMap(q => this.queryToSuggestions(q)),
         takeUntilDestroyed()
       )
@@ -172,7 +181,6 @@ export class AutocompleteInput implements OnChanges {
         map((list: Array<{ id: string; title: string }>) => {
           const filtered = list.filter(s => includesAll(s.title.toLowerCase()));
 
-          // De-duplicate by specialty id
           const byId = new Map<string, Suggestion>();
           for (const s of filtered) {
             const id = String(s.id || '').trim();
@@ -195,11 +203,13 @@ export class AutocompleteInput implements OnChanges {
 
   // --- UI events ---
   onFocus() {
+    this.isFocused = true;
     this.open = this.suggestions.length > 0;
   }
 
   onBlur() {
-    // slight delay to allow click
+    this.isFocused = false;
+    // slight delay to allow click on options
     setTimeout(() => (this.open = false), 100);
   }
 
@@ -223,6 +233,7 @@ export class AutocompleteInput implements OnChanges {
   choose(s: Suggestion) {
     // Show human-readable label in the input
     this.ctrl.setValue(s.label, { emitEvent: false });
+    this.lastUserValue = s.label;
     this.valueChange.emit(s.label);
     this.open = false;
 
@@ -233,6 +244,7 @@ export class AutocompleteInput implements OnChanges {
 
   clear() {
     this.ctrl.setValue('', { emitEvent: false });
+    this.lastUserValue = '';
     this.valueChange.emit('');
     this.suggestions = [];
     this.open = false;
@@ -251,6 +263,7 @@ export class AutocompleteInput implements OnChanges {
   private isLikelyId(v: string): boolean {
     const s = String(v).trim();
     return /^u\d{6,8}$/i.test(s) || /^SPEC\d+/i.test(s);
+    // If you also get FM000… IDs, extend here:  /^FM\d+$/i
   }
 
   /** If an ID sneaks in via [value], resolve it to the display label so users never see the ID. */
@@ -270,9 +283,7 @@ export class AutocompleteInput implements OnChanges {
         const s = specs.find((x: any) => (x.id || '').toString().toLowerCase() === id.toString().toLowerCase());
         if (s) return s.title || null;
       }
-    } catch {
-      // ignore and fall through
-    }
+    } catch {}
     return null;
   }
 }

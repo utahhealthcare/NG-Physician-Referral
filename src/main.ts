@@ -1,9 +1,14 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { App } from './app/app';
+import { appConfig } from './app/app.config';
 
-const start = () =>
-  bootstrapApplication(App, appConfig).catch(console.error);
+function start() {
+  bootstrapApplication(App, appConfig)
+    .then(() => {
+      document.getElementById('pr-boot')?.remove();
+    })
+    .catch(err => console.error(err));
+}
 
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', start);
